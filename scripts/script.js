@@ -1,61 +1,99 @@
 let output;
+let numA;
+let numB;
+
+let array = [];
 
 function print() {
-    document.getElementById("output").innerHTML = output;
+    console.table(array);
+    parse();
+    document.getElementById("output").innerHTML = array;
+}
+
+// parse array into a whole number
+function parse() {
+    for (let i = 0; i < array.length; i++) {
+        output += array[i];
+    }
 }
 
 function clear() {
-    output = null;
+    output = "empty";
     print();
 }
 
 function zero() {
-    output = 0;
+    array.push('0');
     print();
 }
 
-
 function one() {
-    output = 1;
+    array.push('1');
     print();
 }
 
 function two() {
-    output = 2;
+    array.push('2');
     print();
 }
 
 function three() {
-    output = 3;
+    array.push('3');
     print();
 }
 
 function four() {
-    output = 4;
+    array.push('4');
     print();
 }
 
 function five() {
-    output = 5;
+    array.push('5');
     print();
 }
 
 function six() {
-    output = 6;
+    array.push('6');
     print();
 }
 
 function seven() {
-    output = 7;
+    array.push('7');
     print();
 }
 
 function eight() {
-    output = 8;
+    array.push('8');
     print();
 }
 
 function nine() {
-    output = 9;
+    array.push('9');
     print();
 }
+
+function add() {
+
+}
+// <!-- TODO -->
+// <!-- 
+
+// * Create array to hold number input, then store as whole number when function key is pressed
+
+// * 
+
+// * 
+
+// * 
+
+// * 
+
+// * 
+
+// * 
+
+// * 
+
+// * 
+
+// -->

@@ -1,12 +1,10 @@
-body {
-    /* find a way to center calc */
-}
-
 #wholeCalc {
     background-color: blue;
     display: flex;
     flex-direction: column;
     max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
 }
 
 #output {
@@ -24,11 +22,13 @@ body {
 
 button {
     font-size: 2em;
+    cursor: pointer;
 }
 
 #nums {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 #functions {
