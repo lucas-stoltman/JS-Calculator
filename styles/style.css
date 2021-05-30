@@ -1,4 +1,25 @@
-.calc>button {
-    color: red;
+button {
+    font-size: 2em;
 }
 
+#output {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    padding: 1em;
+}
+
+#stuff {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#nums {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#tools {
+    display: grid;
+    grid-template-columns: 1fr;
+}
