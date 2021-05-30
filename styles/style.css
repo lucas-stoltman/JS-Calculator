@@ -1,18 +1,24 @@
 #wholeCalc {
-    background-color: blue;
     display: flex;
     flex-direction: column;
     max-width: 500px;
     margin: auto;
-    border-radius: 10px;
+    padding: 2em;
+    padding-top: 0;
+    background-color: hsl(0, 0%, 18%);
+    border-radius: 7px;
 }
 
 #output {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: red;
+    background-color: white;
     padding: 1em;
     text-align: center;
+    border-radius: 20px;
+    height: 1em;
 }
 
 #calcButtons {

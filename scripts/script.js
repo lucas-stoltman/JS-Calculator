@@ -1,3 +1,5 @@
+// JS-Calculator created by Lucas Stoltman 2021
+
 let output;
 let numA;
 let numB;
