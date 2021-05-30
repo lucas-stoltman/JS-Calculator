@@ -1,8 +1,12 @@
+body {
+    /* find a way to center calc */
+}
 
 #wholeCalc {
     background-color: blue;
-    display: grid;
-    /* justify-items: center; */
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
 }
 
 #output {
@@ -15,7 +19,8 @@
 
 #calcButtons {
     display: grid;
-    grid-template-columns: 3fr 1fr;}
+    grid-template-columns: 3fr 1fr;
+}
 
 button {
     font-size: 2em;
