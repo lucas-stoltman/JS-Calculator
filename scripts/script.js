@@ -19,8 +19,9 @@ function parse() {
     }
 }
 
-function clear() {
-    output = "empty";
+function wipe() {
+    array = [];
+    output = 'test';
     print();
 }
 
@@ -75,7 +76,7 @@ function nine() {
 }
 
 function add() {
-
+    numA = output;
 }
 // <!-- TODO -->
 // <!-- 
