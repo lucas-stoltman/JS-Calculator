@@ -2,86 +2,114 @@
 
 let output;
 let numA;
-let numB;
+let numB; ``
+let calcButtonPress = 0;
 
-let array = [];
+let integarArray = [];
+let computeArray = [];
 
 function print() {
-    console.table(array);
+    output = '';
+    console.table(integarArray);
+    console.table(computeArray);
     parse();
-    document.getElementById("output").innerHTML = array;
+    console.log(output);
+    document.getElementById("output").innerHTML = output;
 }
 
-// parse array into a whole number
+// parse integarArray into a whole number
 function parse() {
-    for (let i = 0; i < array.length; i++) {
-        output += array[i];
+    for (let i = 0; i < integarArray.length; i++) {
+        output += integarArray[i];
+    }
+    output = parseInt(output);
+    if (output == NaN) {
+        output = '';
     }
 }
 
 function wipe() {
-    array = [];
-    output = 'test';
-    print();
+    integarArray = [];
+    document.getElementById("output").innerHTML = '';
 }
 
+function decimal() {
+    integarArray.push('.');
+    print();
+}
 function zero() {
-    array.push('0');
+    integarArray.push('0');
     print();
 }
 
 function one() {
-    array.push('1');
+    integarArray.push('1');
     print();
 }
 
 function two() {
-    array.push('2');
+    integarArray.push('2');
     print();
 }
 
 function three() {
-    array.push('3');
+    integarArray.push('3');
     print();
 }
 
 function four() {
-    array.push('4');
+    integarArray.push('4');
     print();
 }
 
 function five() {
-    array.push('5');
+    integarArray.push('5');
     print();
 }
 
 function six() {
-    array.push('6');
+    integarArray.push('6');
     print();
 }
 
 function seven() {
-    array.push('7');
+    integarArray.push('7');
     print();
 }
 
 function eight() {
-    array.push('8');
+    integarArray.push('8');
     print();
 }
 
 function nine() {
-    array.push('9');
+    integarArray.push('9');
     print();
 }
 
 function add() {
-    numA = output;
+    calcButtonPress++;
+
+    // Not sure about this...
+
+    // switch (calcButtonPress) {
+    //     case 1:
+    //         parse(output);
+    //         numA = output;
+    //         wipe();
+    //     case 2:
+    //         parse(output);
+    //         numB = output;
+    // }
+}
+
+function equals() {
+    print();
 }
 // <!-- TODO -->
 // <!-- 
 
-// * Create array to hold number input, then store as whole number when function key is pressed
+// * Create integarArray to hold number input, then store as whole number when function key is pressed
 
 // * 
 
