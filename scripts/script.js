@@ -10,8 +10,8 @@ let computeArray = [];
 
 function print() {
     output = '';
-    console.table(integarArray);
-    console.table(computeArray);
+    console.log(integarArray);
+    console.log(computeArray);
     parse();
     console.log(output);
     document.getElementById("output").innerHTML = output;
@@ -23,13 +23,13 @@ function parse() {
         output += integarArray[i];
     }
     output = parseInt(output);
-    if (output == NaN) {
-        output = '';
-    }
 }
+
 
 function wipe() {
     integarArray = [];
+    computeArray = [];
+    calcButtonPress = 0;
     document.getElementById("output").innerHTML = '';
 }
 
@@ -89,18 +89,10 @@ function nine() {
 
 function add() {
     calcButtonPress++;
-
-    // Not sure about this...
-
-    // switch (calcButtonPress) {
-    //     case 1:
-    //         parse(output);
-    //         numA = output;
-    //         wipe();
-    //     case 2:
-    //         parse(output);
-    //         numB = output;
-    // }
+    // wipe the current integer
+    integarArray = [];
+    computeArray[calcButtonPress] = output;
+    console.table(computeArray);
 }
 
 function equals() {
