@@ -4,6 +4,7 @@ let output;
 let numA;
 let numB; ``
 let calcButtonPress = 0;
+let addPress = 0;
 
 let integarArray = [];
 let computeArray = [];
@@ -29,7 +30,11 @@ function parse() {
 function wipe() {
     integarArray = [];
     computeArray = [];
+    numA = 0;
+    numB = 0;
     calcButtonPress = 0;
+    console.log("Cleared!");
+    console.log(integarArray);
     document.getElementById("output").innerHTML = '';
 }
 
@@ -88,20 +93,37 @@ function nine() {
 }
 
 function add() {
-    calcButtonPress++;
-    // wipe the current integer
+
+    addPress++;
+    console.log(addPress);
     integarArray = [];
-    computeArray[calcButtonPress] = output;
-    console.table(computeArray);
+
+    numA = output;
+    console.log(`NumA = ${numA}`);
+    output = '';
+
+    // calcButtonPress++;
+    // // wipe the current integer
+    // integarArray = [];
+    // computeArray[calcButtonPress] = output;
+    // console.table(computeArray);
 }
 
 function equals() {
-    print();
+
+    numB = output;
+    console.log(`NumB = ${numB}`);
+    if (addPress > 0) {
+        output = numA + numB;
+        console.log(`Total:${output}`)
+        addPress = 0;
+    }
+    document.getElementById("output").innerHTML = output;
 }
 // <!-- TODO -->
 // <!-- 
 
-// * Create integarArray to hold number input, then store as whole number when function key is pressed
+// * Fix addition functionality
 
 // * 
 
